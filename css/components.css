@@ -97,3 +97,60 @@ footer p {
     font-size: 1.2rem; /*19.2px, это эксперименты?*/
     color: #4fc3f7;
 }
+
+/*catalog*/
+.course-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(79, 195, 247, 0.4);
+    padding: 30px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    border-color: #4fc3f7;
+    transform: scale(1.02);
+}
+
+.course-card p {
+    margin-bottom: 20px;
+}
+
+/*копипаст с лейаута, тип говорят надо так для масшатибируемости*/
+.filters-verti {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.filter-btn {
+    width: 100%;
+    padding: 12px 20px;
+    text-align: left;
+    cursor: pointer;
+    display: block;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #4fc3f7;
+    border: 1px solid #4fc3f7;
+    padding: 10px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(79, 195, 247, 0.1);
+    box-shadow: 0 0 15px rgba(79, 195, 247, 0.3);
+    transform: translateY(-2px);
+}
+
+/*формы для обрезаний кнопок (мб удалить)*/
+.cut-top-left { clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 35%); }
+.cut-double { clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); }
