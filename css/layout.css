@@ -104,9 +104,8 @@ section {
     color: #fff;
 }
 
-/*пк*/
+/*pc*/
 @media (min-width: 768px) {
-    /*сетка главной страницы*/
     .index-page {
         display: grid;
         grid-template-columns: 1fr 2fr; 
@@ -188,7 +187,6 @@ section {
         gap: 20px;
         background-color: rgba(0, 0, 0, 0.2);
         padding: 20px 20px 80px 20px; 
-        /*no-spaces*/
         margin-top: 0;
         margin-bottom: 0;
         border-radius: 0;
@@ -196,10 +194,8 @@ section {
 
     footer {
         margin-top: 0;
-        /*border-top: none; (линия футера)*/
     }
 
-    /*mob*/
     header {
         margin-bottom: 0; 
         padding: 5px 10px; 
@@ -238,7 +234,7 @@ section {
 
     .dashboard-page section {
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch; /*мб deprecated??*/
+        -webkit-overflow-scrolling: touch;
         width: 100%;
         margin-bottom: 10px;
         padding: 10px 5px;
@@ -252,32 +248,19 @@ section {
         width: 100%;
         min-width: 0;
         border-collapse: collapse;
-        font-size: 12px;
+        font-size: 15px;
         border-spacing: 0;
+        line-height: 1.4;
     }
 
-    th[data-mobile-title]::before {
-        content: attr(data-mobile-title);
-    }
-    
     th[data-mobile-title] {
         font-size: 0;
     }
 
     th[data-mobile-title]::before {
+        content: attr(data-mobile-title); 
         font-size: 15px;
         display: inline-block;
-    }
-
-    td {
-        padding: 8px 4px;
-        letter-spacing: -0.5px;
-    }
-
-    @media (max-width: 767px) {
-    table {
-        font-size: 15px;
-        line-height: 1.4;
     }
 
     th {
@@ -287,11 +270,11 @@ section {
 
     td {
         padding: 15px 5px;
+        letter-spacing: -0.5px;
     }
-}
 
     .dashboard-page form label {
-    font-weight: bold;
+        font-weight: bold;
     }
 
     .dashboard-page form input[type="file"],
@@ -330,4 +313,26 @@ section {
         margin: 0 auto;
     }
 
+    .auth-page {
+        align-items: flex-start;
+        padding-top: 40px;
+        min-height: auto;
+    }
+
+    .auth-card {
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+    }
+
+    .form-options {
+        flex-wrap: wrap;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .remember-me, .forgot-link {
+        width: 100%;
+        justify-content: center;
+    }
 }
