@@ -15,9 +15,36 @@
                 <li><a href="dashboard.html">Панель управления</a></li>
                 <li><a href="about.html">ОБО МНЕ</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="login.html">Войти</a></li>
             </ul>
         </nav>
     </header>
+
+    <main class="auth-page">
+        <div class="auth-card">
+            <h2>Связаться со мной</h2>
+            <p class="auth-description">Хотите работать вместо меня? Напишите мне!</p>
+            
+            <form action="#">
+                <div class="form-group">
+                    <label for="username">Ваш логин или имя</label>
+                    <input type="text" id="username" name="username" placeholder="Введите имя..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Email или номер телефона</label>
+                    <input type="text" id="contact" name="contact" placeholder="example@mail.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Ваше сообщение</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Введите ваше сообщение здесь..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Отправить сообщение</button>
+            </form>
+        </div>
+    </main>
 
     <footer>
         <p>&copy; 2026 неAITUC!!1</p>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>HTML/CSS Курс</title>
+    <link rel="stylesheet" href="../css/reset.css"> <link rel="stylesheet" href="../css/base.css">  <link rel="stylesheet" href="../css/layout.css"> <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../catalog.html">Курсы</a></li>
+                <li><a href="../dashboard.html">Панель управления</a></li>
+                <li><a href="../about.html">ОБО МНЕ</a></li>
+                <li><a href="../contacts.html">Контакты</a></li>
+                <li><a href="../login.html">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="course-page">
+        <section class="course-header-card">
+            <div class="course-info">
+                <span class="badge">123</span>
+                <h1>Основы верстки и создание адаптивных сайтов.</h1>
+                <p>Преподаватель: ----</p>
+            </div>
+            <div class="course-progress">
+                <label>Общий прогресс: 75%</label>
+                <progress value="75" max="100"></progress>
+            </div>
+        </section>
+
+        <div class="course-layout-grid">
+            <div class="course-content">
+                
+                <article class="content-card">
+                    <h3>Модуль 99: Тестирование CSS</h3>
+                    <p class="description">Проверка знаний по Flexbox и Grid.</p>
+                    
+                    <form class="quiz-form">
+                        <div class="quiz-question">
+                            <p>1. Какое свойство включает Flexbox?</p>
+                            <label><input type="radio" name="q1"> display: block</label>
+                            <label><input type="radio" name="q1"> display: flex</label>
+                            <label><input type="radio" name="q1"> display: grid</label>
+                        </div>
+                        <div class="quiz-question">
+                            <p>2. Как выровнять элементы по центру?</p>
+                            <label><input type="radio" name="q2"> justify-content: center</label>
+                            <label><input type="radio" name="q2"> align: middle</label>
+                        </div>
+                        <button type="button" class="btn-primary">Завершить тест</button>
+                    </form>
+                </article>
+
+                <article class="content-card">
+                    <h3>Загрузка практической работы</h3>
+                    <p class="description">Загрузите архив с вашим проектом.</p>
+                    
+                    <div class="upload-zone">
+                        <input type="file" id="file-upload" class="file-input">
+                        <label for="file-upload" class="upload-label">
+                            <span class="upload-icon">📁</span>
+                            <span>Нажмите для выбора файла</span>
+                        </label>
+                    </div>
+                    <button class="btn-secondary">Отправить на проверку</button>
+                </article>
+            </div>
+
+            <aside class="course-sidebar">
+                <div class="content-card grades-widget">
+                    <h3>Журнал оценок</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Задание</th>
+                                <th>Балл</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML Основы</td>
+                                <td class="grade-good">95/100</td>
+                            </tr>
+                            <tr>
+                                <td>CSS Стили</td>
+                                <td class="grade-good">88/100</td>
+                            </tr>
+                            <tr>
+                                <td>Flexbox Тест</td>
+                                <td class="grade-avg">70/100</td>
+                            </tr>
+                            <tr>
+                                <td><b>Итого</b></td>
+                                <td><b>84%</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="content-card info-widget">
+                    <h3>Материалы</h3>
+                    <ul class="file-list">
+                        <li><a href="#">Файл.pdf</a></li>
+                        <li><a href="https://github.com/BlackSoul1337/project">GitHub</a></li>
+                        <li><a href="#">Лекция</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 неAITUC!!1</p>
+    </footer>
+    
+</body>
+</html>
